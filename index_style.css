@@ -183,6 +183,9 @@
 	font-weight: bold;
 
 }
+a:visited, a { 
+	color: black;
+  }
 
 
 
