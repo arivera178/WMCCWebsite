@@ -1,0 +1,20 @@
+
+#borderofsection{
+	  border-bottom:1px #e8e8e8 solid;
+	  background-color:#f7931d;
+	  padding:8px;
+	  font-size:13px;
+	  font-weight:700;
+	  color:#45484d;
+  }
+  #borderofsection2{
+	border-bottom:1px #e8e8e8 solid;
+	background-color:#f3f3f3;
+	padding:8px;
+	font-size:13px;
+	font-weight:700;
+	color:#45484d;
+}
+a:visited, a { 
+	color: black;
+  }

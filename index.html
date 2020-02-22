@@ -1,31 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WMCC FBLA</title>
-    <link href="index_style.css" rel="stylesheet">
-    <script src="navbar_js.js" defer></script>
+    <link href="index_styles.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 40px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
 </head>
-<header>
-
-</header>
 <body>
-		<!--Menu-->
-	<div id="responsive-admin-menu">
-	<div id="responsive-menu">
-		<div class="menuicon">≡</div>
-	</div>
-	<center>
-	<div id="logo" style="height:50px;width:50px;">
-		
-	<a href="index.html"><img src="FINAL.png" style="width:50px;height:50px;"></img></a>
-		
-	</div></center>
 
-    <div id="menu">
-
-	<a href="committees.html">Committees</a>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <center><a href="index.html"><img src="FINAL.png" style="width:50px;height:50px;"></img></a></center>
+  <a href="committees.html">Committees</a>
 	<a href="team.html">Team</a>
 	<a href="calendar.html">Calendar</a>
 	<a href="juniornews.html">Junior News</a>
@@ -35,59 +83,75 @@
 	<a href="socialmedia.html">Social Media</a>
 	<a href="other.html">Other Contents</a>
 	<a href="https://10.106.15.15">Database Login</a> 
-	<!--Menu-->
-
-</div></div>
-
-
-<div id="content-wrapper">
-
-<div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
-		<div class="borderofsection" id="borderofsection">
-			Your Senior Officers Officers</div>
-		<div style="padding:8px;font-size:13px;"><ul>
-			<li><p style="font-size:15px;">President<p></li><a href="officers/seniorpresident.html"> Abraham Rivera Garcia</a>
-			<li><p style="font-size:15px;">Executive Vice President<p></li><a href="officers/seniorevp.html">Ariahnnah Porras</a>
-			<li><p style="font-size:15px;">VP of Records<p></li><a href="officers/seniorvprecords.html">Nicole Garay</a>
-			<li><p style="font-size:15px;">VP of Chapter Development<p></li><a href="officers/seniorvpchapterdev.html">Connor Murphy</a>
-			<li><p style="font-size:15px;">VP of Chapter Managment<p></li><a href="officers/seniorvpchaptermanager.html">Daniel Garcia</a>
-			<li><p style="font-size:15px;">VP of Media Relations<p></li><a href="officers/seniorvpmedia.html">Nicholas Garcia</a>
-
-			
-
-			</div>
-	</div>
-
-	<div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
-		<div class="borderofsection" id="borderofsection">
-			Your Advisers
-		</div>
-		<div style="padding:8px;font-size:13px;"><ul>
-			<li><p style="font-size:15px;">Adivser (Y1 Teacher)<p></li><a href="officers/advisor1.html"> Mr. Kyle Peck</a>
-			<li><p style="font-size:15px;">Co-Adivser (Y2 Teacher)<p></li><a href="officers/advisor2.html">Mr. Jordan Gillispie</a>
-
-			
-
-			</div>
-	</div>
-
-	<!-- <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
-		<div style="border-bottom:1px #e8e8e8 solid;background-color:#f3f3f3;padding:8px;font-size:13px;font-weight:700;color:#45484d;">
-			Admin Menu Content3</div>
-		<div style="padding:8px;font-size:13px;">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-			ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-			aliquip ex ea commodo consequat. Duis aute irure dolor in 
-			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-			culpa qui officia deserunt mollit anim id est laborum.		</div>
-	</div> -->
-
-	
-
-
-
 </div>
+
+<div id="main" >
+  <center><a href="index.html"><img src="FINAL.png" style="width:50px;height:50px;"></img></a></center>
+  <button class="openbtn" onclick="openNav()">☰</button>  
+  <div id="content-wrapper" >
+
+    <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+        <div class="borderofsection" id="borderofsection">
+          Your Senior Officers Officers</div>
+        <div style="padding:8px;font-size:13px;"><ul>
+          <li><p style="font-size:15px;">President<p></li><a href="officers/seniorpresident.html"> Abraham Rivera Garcia</a>
+          <li><p style="font-size:15px;">Executive Vice President<p></li><a href="officers/seniorevp.html">Ariahnnah Porras</a>
+          <li><p style="font-size:15px;">VP of Records<p></li><a href="officers/seniorvprecords.html">Nicole Garay</a>
+          <li><p style="font-size:15px;">VP of Chapter Development<p></li><a href="officers/seniorvpchapterdev.html">Connor Murphy</a>
+          <li><p style="font-size:15px;">VP of Chapter Managment<p></li><a href="officers/seniorvpchaptermanager.html">Daniel Garcia</a>
+          <li><p style="font-size:15px;">VP of Media Relations<p></li><a href="officers/seniorvpmedia.html">Nicholas Garcia</a>
+    
+          
+    
+          </div>
+      </div>
+    
+      <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+        <div class="borderofsection" id="borderofsection">
+          Your Advisers
+        </div>
+        <div style="padding:8px;font-size:13px;"><ul>
+          <li><p style="font-size:15px;">Adivser (Y1 Teacher)<p></li><a href="officers/advisor1.html"> Mr. Kyle Peck</a>
+          <li><p style="font-size:15px;">Co-Adivser (Y2 Teacher)<p></li><a href="officers/advisor2.html">Mr. Jordan Gillispie</a>
+    
+          
+    
+          </div>
+      </div>
+    
+      <!-- <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+        <div style="border-bottom:1px #e8e8e8 solid;background-color:#f3f3f3;padding:8px;font-size:13px;font-weight:700;color:#45484d;">
+          Admin Menu Content3</div>
+        <div style="padding:8px;font-size:13px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+          aliquip ex ea commodo consequat. Duis aute irure dolor in 
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+          culpa qui officia deserunt mollit anim id est laborum.		</div>
+      </div> -->
+    
+      
+    
+    
+    
+    </div>
+  
+<!-- STUFF ENDS -->
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 </body>
-</html>
+</html> 
+
