@@ -1,41 +1,44 @@
+#borderofsection {
+	border-bottom: 1px #e8e8e8 solid;
+	background-color: #f7931d;
+	padding: 8px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #45484d;
+}
 
-#borderofsection{
-	  border-bottom:1px #e8e8e8 solid;
-	  background-color:#f7931d;
-	  padding:8px;
-	  font-size:13px;
-	  font-weight:700;
-	  color:#45484d;
-  }
-  #borderofsection2{
-	border-bottom:1px #e8e8e8 solid;
-	background-color:#f3f3f3;
-	padding:8px;
-	font-size:13px;
-	font-weight:700;
-	color:#45484d;
+#borderofsection2 {
+	border-bottom: 1px #e8e8e8 solid;
+	background-color: #f3f3f3;
+	padding: 8px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #45484d;
 }
-#borderofsection20{
-	border-bottom:1px #e8e8e8 solid;
-	background-color:#f3f3f3;
-	padding:8px;
-	font-size:13px;
-	font-weight:700;
-	color:#45484d;
+
+#borderofsection20 {
+	border-bottom: 1px #e8e8e8 solid;
+	background-color: #f3f3f3;
+	padding: 8px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #45484d;
 }
-a:visited, a { 
+
+a:visited, a {
 	color: black;
-  }
-  @font-face {
+}
+
+@font-face {
 	font-family: myFirstFont;
 	src: url(NowayRound-Regular.otf);
-  }
+}
 
-  html{
-		font-family: myFristFont;
-  }
+html {
+	font-family: myFristFont;
+}
 
-  .otherbutton, #otherbutton{ 
+.otherbutton, #otherbutton {
 	background-color: #f7931d;
 	border-radius: 8px;
 	color: white;
@@ -43,14 +46,14 @@ a:visited, a {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-  }
+}
 
-  .otherbutton:hover, #otherbutton:hover, #baasbutton:hover, #baasloginbutton:hover, #teambutton:hover{
-	  background-color: white;
-	  color: black;
-  }
-  .teambutton, #teambutton{
+.otherbutton:hover, #otherbutton:hover, #baasbutton:hover, #baasloginbutton:hover, #teambutton:hover {
+	background-color: white;
+	color: black;
+}
 
+.teambutton, #teambutton {
 	background-color: #f7931d;
 	border-radius: 8px;
 	color: white;
@@ -59,10 +62,9 @@ a:visited, a {
 	text-decoration: none;
 	display: inline-block;
 	height: 50px;
-  }
+}
 
-  .baasbutton, #baasbutton{
-
+.baasbutton, #baasbutton {
 	background-color: #f7931d;
 	border-radius: 8px;
 	color: white;
@@ -70,8 +72,9 @@ a:visited, a {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-  }
-  .baasloginbutton, #baasloginbutton{ 
+}
+
+.baasloginbutton, #baasloginbutton {
 	background-color: #f7931d;
 	border-radius: 8px;
 	color: white;
@@ -79,15 +82,18 @@ a:visited, a {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-  }
-  .column {
+}
+
+.column {
 	float: left;
 	width: 50%;
 	padding: 10px;
-  }
-  .onlyifqd{
-	  visibility: hidden;
-  }
-  #memberqdiflabel:hover .onlyifqd {
+}
+
+.onlyifqd {
+	visibility: hidden;
+}
+
+#memberqdiflabel:hover .onlyifqd {
 	visibility: visible;
-  }
+}

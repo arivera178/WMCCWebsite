@@ -1,7 +1,8 @@
 # Code optimization tasks
-* Pull all the styling out of each page and into proper style sheets
+* Fix each page so that it passes code review (Pull all the styling out of each page and into proper style sheets)
     - pages to do:
         + 404
+            * Done
         + baas
         + baasamerica
         + baasbusiness
@@ -18,7 +19,7 @@
         + seniornews
         + social media
         + team
-        + /officers
+        + /officers html files
 
 # Vue.js Conversion tasks
 * Take nav styles+html and move them to single reusable Vue template

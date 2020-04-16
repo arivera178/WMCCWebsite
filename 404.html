@@ -2,50 +2,51 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="styles/index_styles.css" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles/baseStyles.css" />
   <link rel="stylesheet" href="styles/navStyles.css" />
   <link rel="stylesheet" href="styles/404Styles.css" />
 
-  <script src="scripts/nav.js"></script>
+  <script src="scripts/nav.js" defer></script>
   <title>404 &mdash; Page Not Found</title>
 </head>
 
 <body>
+  <!-- Side Nav (Injected with JS) -->
   <div id="navBar">
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <!-- Button to close the nav -->
+      <button class="closeButton" onclick="closeNav()">&times;</button>
+      <!-- Image which appears in the nav when it's expanded -->
       <a href="index.html" id="navLogo"><img id="navLogoImg" src="assets/FINAL.png"></img></a>
 
+      <!-- Nav bar directory -->
       <a href="committees.html">Committees</a>
       <a href="team.html">Team</a>
       <a href="calendar.html">Calendar</a>
       <a href="juniornews.html">Junior Calendar</a>
       <a href="seniornews.html">Senior Calendar</a>
-      <a href="baas.html">BAA's</a>
+      <a href="baas.html">BAA&apos;s</a>
       <a href="conferences.html">Conferences</a>
       <a href="socialmedia.html">Social Media</a>
       <a href="other.html">Other Contents</a>
       <a href="https://10.106.15.15">Database Login</a>
     </div>
 
-    <div class="divofindex">
-      <div class="row">
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-      </div>
-    </div>
+    <!-- Button to open the nav -->
+    <button class="openButton" onclick="openNav()">&#9776;</button>
   </div>
 
+  <!-- Main content section -->
   <div id="main">
+    <!-- Large logo which appears in the main content section -->
     <a href="index.html"><img src="assets/FINAL.png"></img></a>
-
-    <div class="Title">
-      <h1>Oops!</h1>
-      <h2>The page you're looking for may have been removed :(</h2>
-      <h3>&darr; Click below to return to the homepage &darr;</h3>
-      <a id="ReturnHome" href="index.html">Return Home</a>
-    </div>
+    <!-- Error Message -->
+    <h1>Oops!</h1>
+    <h2>The page you're looking for may have been removed :(</h2>
+    <h3>&darr; Click below to return to the homepage &darr;</h3>
+    <!-- Button leads to home page -->
+    <a id="returnHome" href="index.html">Return Home</a>
   </div>
 </body>
 

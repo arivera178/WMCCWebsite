@@ -26,15 +26,20 @@
     transition: 0.3s;
 }
 
-.sidebar .closebtn {
+.sidebar .closeButton {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    background-color: transparent;
+    color: #818181;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    margin-top: 11px;
 }
 
-.openbtn {
+.openButton {
     font-size: 20px;
     cursor: pointer;
     background-color: #111;
@@ -42,6 +47,8 @@
     padding: 10px 15px;
     border: none;
     border-radius: 40px;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
 /** Navbar Logo Styles **/
@@ -58,13 +65,14 @@ img#navLogoImg {
 
 /* Changes the color of the page links when they are hovered over */
 
-.sidebar a:hover {
+.sidebar a:hover, .sidebar .closeButton:hover {
     color: #f1f1f1;
+    transition: color 0.5s;
 }
 
 /* Hover animation for the little navicon icon visible at all times on the page */
 
-.openbtn:hover {
+.openButton:hover {
     background-color: #444;
 }
 
