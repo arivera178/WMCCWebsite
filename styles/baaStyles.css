@@ -1,0 +1,12 @@
+div#main {
+    height: 100%;
+}
+
+div#topContainer {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    font-size: 13px;
+    /* font-weight: 700; */
+    color: #45484d;
+    text-align: center;
+}
