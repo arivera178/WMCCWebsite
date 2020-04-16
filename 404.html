@@ -2,134 +2,51 @@
 <html>
 
 <head>
-  <link href="index_styles.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: myFirstFont, sans-serif;
-    }
+  <!-- <link rel="stylesheet" href="styles/index_styles.css" /> -->
+  <link rel="stylesheet" href="styles/baseStyles.css" />
+  <link rel="stylesheet" href="styles/navStyles.css" />
+  <link rel="stylesheet" href="styles/404Styles.css" />
 
-    .sidebar {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-
-    .sidebar a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidebar a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidebar .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    .openbtn {
-      font-size: 20px;
-      cursor: pointer;
-      background-color: #111;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 40px;
-    }
-
-    .openbtn:hover {
-      background-color: #444;
-    }
-
-    #main {
-      transition: margin-left .5s;
-      padding: 16px;
-    }
-
-    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-    @media screen and (max-height: 450px) {
-      .sidebar {
-        padding-top: 15px;
-      }
-
-      .sidebar a {
-        font-size: 18px;
-      }
-    }
-  </style>
+  <script src="scripts/nav.js"></script>
+  <title>404 &mdash; Page Not Found</title>
 </head>
 
 <body>
+  <div id="navBar">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html" id="navLogo"><img id="navLogoImg" src="assets/FINAL.png"></img></a>
 
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
-    <a href="committees.html">Committees</a>
-    <a href="team.html">Team</a>
-    <a href="calendar.html">Calendar</a>
-    <a href="juniornews.html">Junior Calendar</a>
-    <a href="seniornews.html">Senior Calendar</a>
-    <a href="baas.html">BAA's</a>
-    <a href="conferences.html">Conferences</a>
-    <a href="socialmedia.html">Social Media</a>
-    <a href="other.html">Other Contents</a>
-    <a href="https://10.106.15.15">Database Login</a>
-  </div>
-
-  <div id="main">
+      <a href="committees.html">Committees</a>
+      <a href="team.html">Team</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="juniornews.html">Junior Calendar</a>
+      <a href="seniornews.html">Senior Calendar</a>
+      <a href="baas.html">BAA's</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="socialmedia.html">Social Media</a>
+      <a href="other.html">Other Contents</a>
+      <a href="https://10.106.15.15">Database Login</a>
+    </div>
 
     <div class="divofindex">
       <div class="row">
-        <button class="openbtn" onclick="openNav()">☰</button>
-
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
       </div>
-
     </div>
-
-
-    <!-- STUFF STARTS HERE -->
-    <center><a href="index.html"><img src="assets/FINAL.png"></img></a></center>
-
-    <div class="Title">
-      <center>
-        <h1>OOPS! We couldn't Find that!</h1>
-      </center>
-      <center>
-        <h1>MAKE SURE YOU GOT THE LINK RIGHT :)</h1>
-      </center>
-    </div>
-
-
-    <!-- STUFF ENDS -->
   </div>
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
+  <div id="main">
+    <a href="index.html"><img src="assets/FINAL.png"></img></a>
 
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-    }
-  </script>
+    <div class="Title">
+      <h1>Oops!</h1>
+      <h2>The page you're looking for may have been removed :(</h2>
+      <h3>&darr; Click below to return to the homepage &darr;</h3>
+      <a id="ReturnHome" href="index.html">Return Home</a>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,93 @@
+
+#borderofsection{
+	  border-bottom:1px #e8e8e8 solid;
+	  background-color:#f7931d;
+	  padding:8px;
+	  font-size:13px;
+	  font-weight:700;
+	  color:#45484d;
+  }
+  #borderofsection2{
+	border-bottom:1px #e8e8e8 solid;
+	background-color:#f3f3f3;
+	padding:8px;
+	font-size:13px;
+	font-weight:700;
+	color:#45484d;
+}
+#borderofsection20{
+	border-bottom:1px #e8e8e8 solid;
+	background-color:#f3f3f3;
+	padding:8px;
+	font-size:13px;
+	font-weight:700;
+	color:#45484d;
+}
+a:visited, a { 
+	color: black;
+  }
+  @font-face {
+	font-family: myFirstFont;
+	src: url(NowayRound-Regular.otf);
+  }
+
+  html{
+		font-family: myFristFont;
+  }
+
+  .otherbutton, #otherbutton{ 
+	background-color: #f7931d;
+	border-radius: 8px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+  }
+
+  .otherbutton:hover, #otherbutton:hover, #baasbutton:hover, #baasloginbutton:hover, #teambutton:hover{
+	  background-color: white;
+	  color: black;
+  }
+  .teambutton, #teambutton{
+
+	background-color: #f7931d;
+	border-radius: 8px;
+	color: white;
+	/* padding: 15px 32px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	height: 50px;
+  }
+
+  .baasbutton, #baasbutton{
+
+	background-color: #f7931d;
+	border-radius: 8px;
+	color: white;
+	/* padding: 15px 32px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+  }
+  .baasloginbutton, #baasloginbutton{ 
+	background-color: #f7931d;
+	border-radius: 8px;
+	color: white;
+	/* padding: 15px 32px; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+  }
+  .column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+  }
+  .onlyifqd{
+	  visibility: hidden;
+  }
+  #memberqdiflabel:hover .onlyifqd {
+	visibility: visible;
+  }

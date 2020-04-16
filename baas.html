@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <link href="index_styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index_styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -76,27 +76,31 @@
 </head>
 
 <body>
+  <div id="navBar">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
+      <a href="committees.html">Committees</a>
+      <a href="team.html">Team</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="juniornews.html">Junior Calendar</a>
+      <a href="seniornews.html">Senior Calendar</a>
+      <a href="baas.html">BAA's</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="socialmedia.html">Social Media</a>
+      <a href="other.html">Other Contents</a>
+      <a href="https://10.106.15.15">Database Login</a>
+    </div>
 
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
-    <a href="committees.html">Committees</a>
-    <a href="team.html">Team</a>
-    <a href="calendar.html">Calendar</a>
-    <a href="juniornews.html">Junior Calendar</a>
-    <a href="seniornews.html">Senior Calendar</a>
-    <a href="baas.html">BAA's</a>
-    <a href="conferences.html">Conferences</a>
-    <a href="socialmedia.html">Social Media</a>
-    <a href="other.html">Other Contents</a>
-    <a href="https://10.106.15.15">Database Login</a>
+    <div class="divofindex">
+      <div class="row">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+    </div>
   </div>
 
   <div id="main">
-    <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
-    <button class="openbtn" onclick="openNav()">☰</button>
-
-    <!-- STUFF -->
+    <!-- STUFF STARTS HERE -->
     <div id="content-wrapper" style="height:100%;">
       <div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
         <div class="borderofsection2" id="borderofsection2">
