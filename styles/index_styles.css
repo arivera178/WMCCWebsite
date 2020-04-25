@@ -25,10 +25,10 @@
 	color: #45484d;
 }
 
-/* a:visited, a {
+a:visited, a {
 	color: black;
 }
-
+/*
 @font-face {
 	font-family: myFirstFont;
 	src: url(NowayRound-Regular.otf);

@@ -1,134 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BAA&apos;s &mdash; Learn More</title>
+
   <link rel="stylesheet" href="styles/index_styles.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: myFirstFont, sans-serif;
-    }
-
-    .sidebar {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-
-    .sidebar a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidebar a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidebar .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    .openbtn {
-      font-size: 20px;
-      cursor: pointer;
-      background-color: #111;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 40px;
-    }
-
-    .openbtn:hover {
-      background-color: #444;
-    }
-
-    #main {
-      transition: margin-left .5s;
-      padding: 16px;
-    }
-
-    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-    @media screen and (max-height: 450px) {
-      .sidebar {
-        padding-top: 15px;
-      }
-
-      .sidebar a {
-        font-size: 18px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles/baseStyles.css" />
+  <link rel="stylesheet" href="styles/navStyles.css" />
+  <link rel="stylesheet" href="styles/baaStyles.css" />
+  <script src="scripts/nav.js" defer></script>
 </head>
 
 <body>
+  <!-- Side Nav (Injected with JS) -->
+  <div id="navBar">
+    <div id="mySidebar" class="sidebar">
+      <!-- Button to close the nav -->
+      <button class="closeButton" onclick="closeNav()">&times;</button>
+      <!-- Image which appears in the nav when it's expanded -->
+      <a href="index.html" id="navLogo"><img id="navLogoImg" src="assets/FINAL.png"></img></a>
 
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
-    <a href="committees.html">Committees</a>
-    <a href="team.html">Team</a>
-    <a href="calendar.html">Calendar</a>
-    <a href="juniornews.html">Junior Calendar</a>
-    <a href="seniornews.html">Senior Calendar</a>
-    <a href="baas.html">BAA's</a>
-    <a href="conferences.html">Conferences</a>
-    <a href="socialmedia.html">Social Media</a>
-    <a href="other.html">Other Contents</a>
-    <a href="https://10.106.15.15">Database Login</a>
+      <!-- Nav bar directory -->
+      <a href="committees.html">Committees</a>
+      <a href="team.html">Team</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="juniornews.html">Junior Calendar</a>
+      <a href="seniornews.html">Senior Calendar</a>
+      <a href="baas.html">BAA&apos;s</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="socialmedia.html">Social Media</a>
+      <a href="other.html">Other Contents</a>
+      <a href="https://10.106.15.15">Database Login</a>
+    </div>
+
+    <!-- Button to open the nav -->
+    <button class="openButton" onclick="openNav()">&#9776;</button>
   </div>
 
+  <!-- Main content section -->
   <div id="main">
-    <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
-    <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div id="mainLogo">
+      <a href="index.html"><img src="assets/FINAL.png"></img></a>
+    </div>
 
-    <!-- STUFF -->
-    <div id="content-wrapper" style="height:100%;">
-      <div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
-        <div class="borderofsection2" id="borderofsection2">
-          <center>
-            <h1>BAA's Login Portal</h1>
-            <button type="button" id="baasloginbutton"
-              onclick="window.location.href = 'https://web.fbla-pbl.org/portal/';">
-              <p>Login Here!</p>
-            </button>
+    <div id="topContainer">
+      <h1>BAA's Login Portal</h1>
+      <a class="standardClickable" href="https://web.fbla-pbl.org/portal/">Login Here</a><br><br>
+      <p>Chapter ID: 2411014</p>
+      <p>Membership ID: Your FBLA National ID</p>
 
-            <p>Chapter ID: 2411014</p>
-            <p>Membership ID: Your FBLA National ID</p>
-          </center>
-        </div>
-        <div class="borderofsection2" id="borderofsection2">
-          <center>
-            <h1>Preview of BAA's</h1>
-            <button type="button" id="baasbutton" onclick="window.location.href = 'baasfuture.html';">
-              <p>Future</p>
-            </button>
-            <button type="button" id="baasbutton" onclick="window.location.href = 'baasbusiness.html';">
-              <p>Business</p>
-            </button>
-            <button type="button" id="baasbutton" onclick="window.location.href = 'baasleader.html';">
-              <p>Leader</p>
-            </button>
-            <button type="button" id="baasbutton" onclick="window.location.href = 'baasamerica.html';">
-              <p>America</p>
-            </button>
-          </center>
-        </div>
-
+      <h1>Preview of BAA's</h1>
+      <button type="button" class="standardClickable"
+        onclick="window.location.href = 'baasfuture.html';">Future</button>
+      <button type="button" class="standardClickable"
+        onclick="window.location.href = 'baasbusiness.html';">Business</button>
+      <button type="button" class="standardClickable"
+        onclick="window.location.href = 'baasleader.html';">Leader</button>
+      <button type="button" class="standardClickable"
+        onclick="window.location.href = 'baasamerica.html';">America</button>
+    </div>
 
       </div>
       <div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
