@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../index_styles.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: myFirstFont, sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 40px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <center><a href="index.html"><img src="../FINAL.png" style="width:50px;height:50px;"></img></a></center>
+  <a href="committees.html">Committees</a>
+	<a href="team.html">Team</a>
+	<a href="calendar.html">Calendar</a>
+	<a href="juniornews.html">Junior Calendar</a>
+	<a href="seniornews.html">Senior Calendar</a>
+	<a href="baas.html">BAA's</a>
+	<a href="conferences.html">Conferences</a>
+	<a href="socialmedia.html">Social Media</a>
+	<a href="other.html">Other Contents</a>
+	<a href="https://10.106.15.15">Database Login</a> 
+</div>
+
+<div id="main" >
+
+  <div class="divofindex">
+    <div class="row">
+      <button class="openbtn" onclick="openNav()">☰</button>
+
+    </div>
+    
+  </div>
+   
+
+  <!-- STUFF STARTS HERE -->
+  <center><a href="index.html"><img src="../FINAL.png" style="width:5%;height:5%;" ></img></a></center>
+
+<div class="Title">
+<center><h1>Register to Conference Registration</h1></center>
+
+</div>
+<form>
+<center>
+<label>First Name</label><br><br>
+<input type="text" id="firstname" name="firstname" style="width:10%;height:20px;" required><br><br>
+<label>Last Name(s)</label><br><br>
+<input type="text" id="lastname" name="lastname" style="width:10%;height:20px;" required><br><br>
+<label>Phone Number</label><br><br>
+<input type="tel" id="phone" name="phone" style="width:10%;height:20px;" required><br><br>
+<label>E-Mail</label><br><br>
+<input type="email" id="phone" name="phone" style="width:10%;height:20px;" required><br><br>
+<label>Grade</label><br><br>
+<select id="squadacomp">
+  <option value="Select">Select</option>
+  <option value="senior">Senior(12)</option>
+  <option value="junior">Junior(11)</option>
+</select><br><br>
+<label>Session</label><br><br>
+<select id="squadacomp">
+  <option value="Select">Select</option>
+  <option value="senior">Session 1 (1:00pm-3:30pm)</option>
+  <option value="junior">Session 2 (4:00pm-6:30pm)</option>
+</select><br><br>
+
+<button type="button" id="submitbutton" class="baasbutton" onclick="window.location.href = '../conferences.html';" style="width:5%"> <p>Submit</p></button><br><br>
+</form>
+<center><a href="login.html">Login!</a></center>
+<center><p>*If you forgot your password, slack the <br> <a href="https://app.slack.com/client/TSJ4J3C2H/CSLAAFR1U/user_profile/USNJ48VUM">VP of Membership</a></p></center>
+
+
+<!-- STUFF ENDS -->
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html> 
+
