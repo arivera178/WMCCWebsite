@@ -1,195 +1,242 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link href="index_styles.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: myFirstFont, sans-serif;
-}
+  <link rel="stylesheet" href="styles/index_styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: myFirstFont, sans-serif;
+    }
 
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
 
-.sidebar a:hover {
-  color: #f1f1f1;
-}
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
 
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 40px;
-}
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 40px;
+    }
 
-.openbtn:hover {
-  background-color: #444;
-}
+    .openbtn:hover {
+      background-color: #444;
+    }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-</style>
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidebar {
+        padding-top: 15px;
+      }
+
+      .sidebar a {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <center><a href="index.html"><img src="FINAL.png" style="width:50px;height:50px;"></img></a></center>
-  <a href="committees.html">Committees</a>
-	<a href="team.html">Team</a>
-	<a href="calendar.html">Calendar</a>
-	<a href="juniornews.html">Junior Calendar</a>
-	<a href="seniornews.html">Senior Calendar</a>
-	<a href="baas.html">BAA's</a>
-	<a href="conferences.html">Conferences</a>
-	<a href="socialmedia.html">Social Media</a>
-	<a href="other.html">Other Contents</a>
-	<a href="https://10.106.15.15">Database Login</a> 
-</div>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
+    <a href="committees.html">Committees</a>
+    <a href="team.html">Team</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="juniornews.html">Junior Calendar</a>
+    <a href="seniornews.html">Senior Calendar</a>
+    <a href="baas.html">BAA's</a>
+    <a href="conferences.html">Conferences</a>
+    <a href="socialmedia.html">Social Media</a>
+    <a href="other.html">Other Contents</a>
+    <a href="https://10.106.15.15">Database Login</a>
+  </div>
 
-<div id="main">
-  <center><a href="index.html"><img src="FINAL.png" style="width:50px;height:50px;"></img></a></center>
-  <button class="openbtn" onclick="openNav()">☰</button>  
+  <div id="main">
+    <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
 
-  <!-- STUFF -->
-  <div id="content-wrapper" style="height:100%;">
-    <div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
-      <div class="borderofsection2" id="borderofsection2">
-        <center>
-          <h1>BAA's Login Portal</h1>
-          <button type="button" id="baasloginbutton" onclick="window.location.href = 'https://web.fbla-pbl.org/portal/';"> <p>Login Here!</p></button>
-  
-          <p>Chapter ID: 2411014</p>
-          <p>Membership ID: Your FBLA National ID</p>
-        </center>
+    <!-- STUFF -->
+    <div id="content-wrapper" style="height:100%;">
+      <div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
+        <div class="borderofsection2" id="borderofsection2">
+          <center>
+            <h1>BAA's Login Portal</h1>
+            <button type="button" id="baasloginbutton"
+              onclick="window.location.href = 'https://web.fbla-pbl.org/portal/';">
+              <p>Login Here!</p>
+            </button>
+
+            <p>Chapter ID: 2411014</p>
+            <p>Membership ID: Your FBLA National ID</p>
+          </center>
         </div>
-      <div class="borderofsection2" id="borderofsection2">
-        <center>
-          <h1>Preview of BAA's</h1>
-          <button type="button" id="baasbutton" onclick="window.location.href = 'baasfuture.html';"> <p>Future</p></button>
-          <button type="button" id="baasbutton" onclick="window.location.href = 'baasbusiness.html';"> <p>Business</p></button>
-          <button type="button" id="baasbutton" onclick="window.location.href = 'baasleader.html';"> <p>Leader</p></button>
-          <button type="button" id="baasbutton" onclick="window.location.href = 'baasamerica.html';"> <p>America</p></button>
-        </center>
+        <div class="borderofsection2" id="borderofsection2">
+          <center>
+            <h1>Preview of BAA's</h1>
+            <button type="button" id="baasbutton" onclick="window.location.href = 'baasfuture.html';">
+              <p>Future</p>
+            </button>
+            <button type="button" id="baasbutton" onclick="window.location.href = 'baasbusiness.html';">
+              <p>Business</p>
+            </button>
+            <button type="button" id="baasbutton" onclick="window.location.href = 'baasleader.html';">
+              <p>Leader</p>
+            </button>
+            <button type="button" id="baasbutton" onclick="window.location.href = 'baasamerica.html';">
+              <p>America</p>
+            </button>
+          </center>
         </div>
-  
-    
+
+
+      </div>
+      <div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
+        <div class="borderofsection" id="borderofsection">
+          Future Award</div>
+        <div style="padding:8px;font-size:13px;">
+          <ul>
+            <p>
+              <h1>Preview of Future Award Activities</h1>
+              Members must complete 10 activities. The form must be submitted by the local adviser by March 1. Pins are
+              sent to local chapter advisers to present at a local awards ceremony or FBLA event.
+              <h2>SERVICE<br></h2>
+              <center>-----------------Complete 3 activities from this section. The first 2 are
+                required.-----------------</center><br>
+              <ul>
+                <li>Activity 1 Communications/Service Learning
+                  Required. Donate five (5) hours of community service.***<br></li>
+                <li>Activity 2 Communications/FBLA Organization and National Programs
+                  Required. Prepare a bulletin board, poster, flyer, social media graphic, or display promoting
+                  FBLA.***<br></li>
+                <li>Activity 3 Communications/FBLA Organization and National Programs
+                  Help your chapter adviser(s) with activities to celebrate American Enterprise Day or FBLA-PBL
+                  Week.<br></li>
+                <li>Activity 4 Communications/Service Learning
+                  Participate on your chapter's community service project committee.<br></li>
+                <li>Activity 5 Service Learning/FBLA Organization and National Programs
+                  Participate in a promotional or fund-raising project for the March of Dimes with your local
+                  chapter.<br></li>
+                <li>Activity 6 Communications/Service Learning
+                  Become a pen pal with a senior citizen, a child in a hospital, a child in another country, or a
+                  soldier in the military.<br></li>
+                <li>Activity 7 Communications/Service Learning
+                  Write a one-page report on a service on the March of Dimes or for your State Service community service
+                  project and present it at a chapter meeting or in a business class.<br></li>
+                <li>Activity 8 Service Learning
+                  Other-As designated by local adviser.<br></li>
+              </ul>
+              <h2>EDUCATION<br></h2>
+              <center>-----------------Complete 3 activities from this section. The first 2 are
+                required.-----------------</center><br>
+              <ul>
+                <li>Activity 9 Technology/FBLA Organization and National Programs
+                  Required. Complete the FBLA Knowledge Quiz with a score of 92 percent or higher.***<br></li>
+                <li>Activity 10 Marketing
+                  Required Create a TALLO online leadership profile.***<br></li>
+                <li>Activity 11 Accounting
+                  Using a spreadsheet, create a one-month budget for yourself or for your local chapter.<br></li>
+                <li>Activity 12 Career Awareness and Exploration
+                  List at least 5 goals (related to school, career, and personal) and include a description of how you
+                  plan to accomplish each one.<br></li>
+                <li>Activity 13 Communications/FBLA Organization and National Programs
+                  Read a business article or story from Tomorrow's Business Leader, FBLA's national publication. Write a
+                  one-page letter in proper business format summarizing and reacting to this article. Address the letter
+                  to your local chapter adviser.<br></li>
+                <li>Activity 14 Career Awareness and Exploration
+                  Write a one-page paper on a business career.<br></li>
+                <li>Activity 15 Career Awareness and Exploration
+                  List five (5) personal strengths and one personal weakness. Write a 100-word summary on what you can
+                  do to overcome the weakness.<br></li>
+                <li>Activity 16 FBLA Organization and National Programs
+                  Participate in the Stock Market Game. Contact your adviser to be included in your chapter's team.<br>
+                </li>
+              </ul>
+              <h2>PROGRESS<br></h2>
+              <center>-----------------Complete 4 activities from this section. The first 2 are
+                required.-----------------</center><br>
+              <ul>
+                <li>Activity 17 Communications/FBLA Organization and National Programs
+                  Required. Bring a friend who is a nonmember to a local chapter FBLA meeting.***<br></li>
+                <li>Activity 18 Communications/FBLA Organization and National Programs
+                  Required. Attend at least three (3) local chapter meetings and prepare a one-page paper that includes
+                  the date of each meeting and a bulleted list of meeting highlights.***<br></li>
+                <li>Activity 19 Communications/FBLA Organization and National Programs
+                  Complete the Programs Worksheet .<br></li>
+                <li>Activity 20 Communications/Career Exploration
+                  Invite a business leader or FBLA alumni members to speak at a meeting. Write a letter inviting this
+                  businessperson or FBLA alumni member to your meeting.<br></li>
+                <li>Activity 21 Communications/FBLA Organization and National Programs
+                  Attend a local chapter activity/event. Prepare a 100-word summary describing this event or
+                  activity.<br></li>
+                <li>Activity 22 Communications/FBLA Organization and National Programs
+                  Recite the FBLA Creed at a chapter meeting or event and explain your understanding of this creed as it
+                  relates to your future and to the business world in a memo to your local chapter adviser.<br></li>
+                <li>Activity 23 Communications/Technology
+                  Text five (5) friends and invite them to the next FBLA meeting. (List the names on the interactive
+                  form.)<br></li>
+                <li>Activity 24 Communications
+                  Prepare an invitation inviting students to attend the next FBLA meeting.<br></li>
+                <li>Activity 25 Communications/Marketing
+                  Recruit one (1) Professional Division member.<br></li>
+              </ul>
+        </div>
+      </div>
     </div>
-<div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
-    <div class="borderofsection" id="borderofsection">
-        Future Award</div>
-    <div style="padding:8px;font-size:13px;"><ul>
-        <p>
-            <h1>Preview of Future Award Activities</h1>
-Members must complete 10 activities. The form must be submitted by the local adviser by March 1. Pins are sent to local chapter advisers to present at a local awards ceremony or FBLA event.
-<h2>SERVICE<br></h2>
-<center>-----------------Complete 3 activities from this section. The first 2 are required.-----------------</center><br><ul>
-<li>Activity 1 Communications/Service Learning
-Required. Donate five (5) hours of community service.***<br></li>
-<li>Activity 2 Communications/FBLA Organization and National Programs
-Required. Prepare a bulletin board, poster, flyer, social media graphic, or display promoting FBLA.***<br></li>
-<li>Activity 3 Communications/FBLA Organization and National Programs
-Help your chapter adviser(s) with activities to celebrate American Enterprise Day or FBLA-PBL Week.<br></li>
-<li>Activity 4 Communications/Service Learning
-Participate on your chapter's community service project committee.<br></li>
-<li>Activity 5 Service Learning/FBLA Organization and National Programs
-Participate in a promotional or fund-raising project for the March of Dimes with your local chapter.<br></li>
-<li>Activity 6 Communications/Service Learning
-Become a pen pal with a senior citizen, a child in a hospital, a child in another country, or a soldier in the military.<br></li>
-<li>Activity 7 Communications/Service Learning
-Write a one-page report on a service on the March of Dimes or for your State Service community service project and present it at a chapter meeting or in a business class.<br></li>
-<li>Activity 8 Service Learning
-Other-As designated by local adviser.<br></li></ul>
-<h2>EDUCATION<br></h2>
-<center>-----------------Complete 3 activities from this section. The first 2 are required.-----------------</center><br><ul>
-<li>Activity 9 Technology/FBLA Organization and National Programs
-Required. Complete the FBLA Knowledge Quiz with a score of 92 percent or higher.***<br></li>
-<li>Activity 10 Marketing
-Required Create a TALLO online leadership profile.***<br></li>
-<li>Activity 11 Accounting
-Using a spreadsheet, create a one-month budget for yourself or for your local chapter.<br></li>
-<li>Activity 12 Career Awareness and Exploration
-List at least 5 goals (related to school, career, and personal) and include a description of how you plan to accomplish each one.<br></li>
-<li>Activity 13 Communications/FBLA Organization and National Programs
-Read a business article or story from Tomorrow's Business Leader, FBLA's national publication. Write a one-page letter in proper business format summarizing and reacting to this article. Address the letter to your local chapter adviser.<br></li>
-<li>Activity 14 Career Awareness and Exploration
-Write a one-page paper on a business career.<br></li>
-<li>Activity 15 Career Awareness and Exploration
-List five (5) personal strengths and one personal weakness. Write a 100-word summary on what you can do to overcome the weakness.<br></li>
-<li>Activity 16 FBLA Organization and National Programs
-Participate in the Stock Market Game. Contact your adviser to be included in your chapter's team.<br></li></ul>
-<h2>PROGRESS<br></h2>
-<center>-----------------Complete 4 activities from this section. The first 2 are required.-----------------</center><br><ul>
-<li>Activity 17 Communications/FBLA Organization and National Programs
-Required. Bring a friend who is a nonmember to a local chapter FBLA meeting.***<br></li>
-<li>Activity 18 Communications/FBLA Organization and National Programs
-Required. Attend at least three (3) local chapter meetings and prepare a one-page paper that includes the date of each meeting and a bulleted list of meeting highlights.***<br></li>
-<li>Activity 19 Communications/FBLA Organization and National Programs
-Complete the Programs Worksheet .<br></li>
-<li>Activity 20 Communications/Career Exploration
-Invite a business leader or FBLA alumni members to speak at a meeting. Write a letter inviting this businessperson or FBLA alumni member to your meeting.<br></li>
-<li>Activity 21 Communications/FBLA Organization and National Programs
-Attend a local chapter activity/event. Prepare a 100-word summary describing this event or activity.<br></li>
-<li>Activity 22 Communications/FBLA Organization and National Programs
-Recite the FBLA Creed at a chapter meeting or event and explain your understanding of this creed as it relates to your future and to the business world in a memo to your local chapter adviser.<br></li>
-<li>Activity 23 Communications/Technology
-Text five (5) friends and invite them to the next FBLA meeting. (List the names on the interactive form.)<br></li>
-<li>Activity 24 Communications
-Prepare an invitation inviting students to attend the next FBLA meeting.<br></li>
-<li>Activity 25 Communications/Marketing
-Recruit one (1) Professional Division member.<br></li></ul></div></div></div>
-<!-- STUFF ENDS -->
-</div>
+    <!-- STUFF ENDS -->
+  </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
 </body>
-</html> 
 
+</html>

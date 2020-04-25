@@ -1,0 +1,94 @@
+/*** Default styles on DOM load ***/
+
+/* Nav box starting formatting */
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+div#navBar {
+    width: fit-content;
+}
+
+/* Nav box starting text formatting */
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar .closeButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    background-color: transparent;
+    color: #818181;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    margin-top: 11px;
+}
+
+.openButton {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/** Navbar Logo Styles **/
+
+a#navLogo {
+    text-align: center;
+}
+
+img#navLogoImg {
+    width: 50px;
+}
+
+/*** post load animations section ***/
+
+/* Changes the color of the page links when they are hovered over */
+
+.sidebar a:hover, .sidebar .closeButton:hover {
+    color: #f1f1f1;
+    transition: color 0.5s;
+}
+
+/* Hover animation for the little navicon icon visible at all times on the page */
+
+.openButton:hover {
+    background-color: #444;
+}
+
+/*** Mobile/small screen modifications ***/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}

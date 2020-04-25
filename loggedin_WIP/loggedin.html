@@ -1,137 +1,446 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link href="../index_styles.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: myFirstFont, sans-serif;
-}
+  <link href="index_styles.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: myFirstFont, sans-serif;
+    }
 
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
 
-.sidebar a:hover {
-  color: #f1f1f1;
-}
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
 
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 40px;
-}
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #111;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 40px;
+    }
 
-.openbtn:hover {
-  background-color: #444;
-}
+    .openbtn:hover {
+      background-color: #444;
+    }
 
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-</style>
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidebar {
+        padding-top: 15px;
+      }
+
+      .sidebar a {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <center><a href="../index.html"><img src="../FINAL.png" style="width:50px;height:50px;"></img></a></center>
-  <a href="../committees.html">Committees</a>
-	<a href="../team.html">Team</a>
-	<a href="../calendar.html">Calendar</a>
-	<a href="../juniornews.html">Junior Calendar</a>
-	<a href="../seniornews.html">Senior Calendar</a>
-	<a href="../baas.html">BAA's</a>
-	<a href="../conferences.html">Conferences</a>
-	<a href="../socialmedia.html">Social Media</a>
-	<a href="../other.html">Other Contents</a>
-	<a href="https://10.106.15.15">Database Login</a> 
-</div>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <center><a href="../index.html"><img src="../FINAL.png" style="width:50px;height:50px;"></img></a></center>
+    <a href="../committees.html">Committees</a>
+    <a href="../team.html">Team</a>
+    <a href="../calendar.html">Calendar</a>
+    <a href="../juniornews.html">Junior Calendar</a>
+    <a href="../seniornews.html">Senior Calendar</a>
+    <a href="../baas.html">BAA's</a>
+    <a href="../conferences.html">Conferences</a>
+    <a href="../socialmedia.html">Social Media</a>
+    <a href="../other.html">Other Contents</a>
+    <a href="https://10.106.15.15">Database Login</a>
+  </div>
 
-<div id="main" >
+  <div id="main">
 
-  <div class="divofindex">
-    <div class="row">
-      <button class="openbtn" onclick="openNav()">☰</button>
+    <div class="divofindex">
+      <div class="row">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+      </div>
 
     </div>
-    
-  </div>
-   
 
-  <!-- STUFF STARTS HERE -->
-  <center>
- <h1>Welcome "NAME"</h1>     <button type="button" id="baasbutton" onclick="window.location.href = '../conferences.html';"> <p>LOGOUT</p></button><br><br>
- <h3>Your Information:</h3>
- <p>Your FBLA National ID: "#######"</p>
- <a href="../conferences.html">Conferences Information</a><br><br>
- 
 
-<div style="border:1px #e8e8e8 solid;width:49%;float:center;margin:10px 0px 10px 0px">
-  <div class="borderofsection" id="borderofsection"">
-      Register</div>
-  <div style="padding:8px;font-size:13px;width: 100%;height: 100%;">
-    <button type="button" id="baasbutton" onclick="window.location.href = 'region3registration.html';"> <p>Region 3 Leadership Conference Registraion</p></button><br><br>
-    <button type="button" id="baasbutton" onclick="window.location.href = 'stateregistration.html';"> <p>State Leadership Conference Registraion</p></button><br><br>
+    <!-- STUFF STARTS HERE -->
+    <center>
+      <h1>Welcome "NAME"</h1> <button type="button" id="baasbutton"
+        onclick="window.location.href = '../conferences.html';">
+        <p>LOGOUT</p>
+      </button><br><br>
+      <h3>Your Information:</h3>
+      <p>Your FBLA National ID: "#######"</p>
+      <button type="button" id="baasbutton" onclick="window.location.href = '../conferences.html';">
+        <p>Conferences</p>
+      </button><br><br>
+      <center><button type="button" id="baasbutton" onclick="window.location.href = '../conferences.html';"
+          style="width:20%">
+          <p>SAVE CHANGES</p>
+        </button><br><br>
+        <center></center>
+      </center>
+      <!-- START OF SECTION -->
+      <div style="border:3px gray solid;width:49%;float:left;margin:10px 0px 10px 0px">
+        <div class="borderofsection" id="borderofsection"">
+        Region 3 Leadership Conference</div>
+    <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+          <p>Do you plan to attend the Region 3 Leadership Conference?</p>
+          <label class="container">Yes
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">No
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <br>
+          <!--Quad A Start-->
+          <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20"">
+                Individual Quad A</div>
+            <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <select id="quada">
+                <option value="volvo">SELECT</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+
+            </div>
+          </div>
+          <!--Quad A End-->
+          <!--Quad C Start-->
+          <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20"">
+                Individual Quad C</div>
+            <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <select id="quada">
+                <option value="volvo">SELECT</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+
+            </div>
+          </div>
+          <!--Quad C End-->
+          <!--Quad B Start-->
+          <div style="border:1px #e8e8e8 solid;width:49%;height:49%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20">
+              Team Quad B</div>
+            <div style="padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <select id="quad b">
+                <option value="volvo">SELECT</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <br>
+              <br>
+              <label>Team Member 1</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <label>Team Member 2</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <label>Team Member 3</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+
+
+            </div>
+          </div>
+          <!--Quad B End-->
+          <!--Quad D Start-->
+          <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20"">
+                        Team Quad D</div>
+                    <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <select id="quad b">
+                <option value="volvo">SELECT</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <br>
+              <br>
+              <label>Team Member 1</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <label>Team Member 2</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <label>Team Member 3</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <!-- STUFFFFF -->
+              <div style="border:1px #e8e8e8 solid;width:94%;float:left;margin:10px 0px 10px 0px">
+                <div class="borderofsection" id="borderofsection20"">
+                            ONLY IF IN PARLAMENTAY POCEDURES</div>
+                        <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+                  <label if="memberqdiflabel">Team Member 4</label>
+                  <input type="text" id="memberqdifbox" name="lname" value="none"><br><br>
+                  <br>
+                  <label if="memberqdiflabel">Team Member 5</label>
+                  <input type="text" id="memberqdifbox" name="lname" value="none"><br><br>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Quad D End-->
+          <!--TEST Start-->
+          <div style="border:1px #e8e8e8 solid;width:98%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20"">
+                        Tests</div>
+                    <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <label>Test #1
+                <select id="quada">
+                  <option value="volvo">SELECT</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <label style="visibility: hidden;">HHEHEHHEH</label>
+                <label>Test #1
+                  <select id="quada">
+                    <option value="volvo">SELECT</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <label style="visibility: hidden;">HHEHEHHEH</label>
+                  <label>Test #1
+                    <select id="quada">
+                      <option value="volvo">SELECT</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label style="visibility: hidden;">HEH</label>
+
+            </div>
+          </div>
+          <!--TESTS End-->
+          <br><br><br>
+        </div>
       </div>
-</div>
-</center>
+      <!-- END OF SECTION -->
+      <!-- START OF SECTION -->
+      <div style="border:3px gray solid;width:49%;float:left;margin:10px 0px 10px 0px">
+        <div class="borderofsection" id="borderofsection"">
+        State Leadership Conference</div>
+    <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+          <p>Do you plan to attend the State Leadership Conference?</p>
+          <label class="container">Yes
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">No
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <br>
+          <!--Quad A Start-->
+          <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20"">
+                Individual Quad A</div>
+            <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <select id="quada">
+                <option value="volvo">SELECT</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
 
-<!-- <center><h2>Get started by opening the Menu</h2></center> -->
-</div>
+            </div>
+          </div>
+          <!--Quad A End-->
+          <!--Quad C Start-->
+          <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20"">
+                Individual Quad C</div>
+            <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <select id="quada">
+                <option value="volvo">SELECT</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
 
-  
-<!-- STUFF ENDS -->
-</div>
+            </div>
+          </div>
+          <!--Quad C End-->
+          <!--Quad B Start-->
+          <div style="border:1px #e8e8e8 solid;width:49%;height:49%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20">
+              Team Quad B</div>
+            <div style="padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <select id="quad b">
+                <option value="volvo">SELECT</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <br>
+              <br>
+              <label>Team Member 1</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <label>Team Member 2</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <label>Team Member 3</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
 
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+            </div>
+          </div>
+          <!--Quad B End-->
+          <!--Quad D Start-->
+          <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20"">
+                        Team Quad D</div>
+                    <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <select id="quad b">
+                <option value="volvo">SELECT</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+              <br>
+              <br>
+              <label>Team Member 1</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <label>Team Member 2</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <label>Team Member 3</label>
+              <input type="text" id="lname" name="lname" value="none"><br><br>
+              <br>
+              <!-- STUFFFFF -->
+              <div style="border:1px #e8e8e8 solid;width:94%;float:left;margin:10px 0px 10px 0px">
+                <div class="borderofsection" id="borderofsection20"">
+                            ONLY IF IN PARLAMENTAY POCEDURES</div>
+                        <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+                  <label if="memberqdiflabel">Team Member 4</label>
+                  <input type="text" id="memberqdifbox" name="lname" value="none"><br><br>
+                  <br>
+                  <label if="memberqdiflabel">Team Member 5</label>
+                  <input type="text" id="memberqdifbox" name="lname" value="none"><br><br>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--Quad D End-->
+          <!--TEST Start-->
+          <div style="border:1px #e8e8e8 solid;width:98%;float:left;margin:10px 0px 10px 0px">
+            <div class="borderofsection" id="borderofsection20"">
+                        Tests</div>
+                    <div style=" padding:8px;font-size:13px;width: 100%;height: 100%;">
+              <br>
+              <label>Test #1
+                <select id="quada">
+                  <option value="volvo">SELECT</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <label style="visibility: hidden;">HHEHEHHEH</label>
+                <label>Test #1
+                  <select id="quada">
+                    <option value="volvo">SELECT</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                  <label style="visibility: hidden;">HHEHEHHEH</label>
+                  <label>Test #1
+                    <select id="quada">
+                      <option value="volvo">SELECT</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                    <label style="visibility: hidden;">HEH</label>
+
+            </div>
+          </div>
+          <!--TESTS End-->
+          <br><br><br>
+        </div>
+      </div>
+      <!-- END OF SECTION -->
+
+      <!-- <center><h2>Get started by opening the Menu</h2></center> -->
+  </div>
+
+
+  <!-- STUFF ENDS -->
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
 </body>
-</html> 
 
+</html>

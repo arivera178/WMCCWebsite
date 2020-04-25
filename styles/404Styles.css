@@ -1,0 +1,20 @@
+div#main {
+    text-align: center;
+}
+
+a#returnHome {
+    font-size: 4em;
+    text-decoration: none;
+    /* !!!: Make sure to correct this to WestMEC approved colors */
+    color: white;
+    background-color: orange;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+a#returnHome:hover, a#returnHome:active {
+    /* !!!: Make sure to correct this to WestMEC approved colors */
+    color: rgb(151, 150, 150);
+    background-color: rgba(255, 166, 0, 0.842);
+    transition: color 1s, background-color 1s;
+}
