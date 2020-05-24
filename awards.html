@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="styles/index_styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>West-MEC CC FBLA - About</title>
   <style>
     body {
       font-family: myFirstFont, sans-serif;
@@ -81,15 +82,16 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <center><a href="index.html"><img src="assets/FINAL.png" style="width:50px;height:50px;"></img></a></center>
     <a href="committees.html">Committees</a>
-    <a href="team.html">Team</a>
+    <a href="officers.html">Officers</a>
     <a href="calendar.html">Calendar</a>
-    <a href="juniornews.html">Junior Calendar</a>
-    <a href="seniornews.html">Senior Calendar</a>
-    <a href="baas.html">BAA's</a>
-    <a href="conferences.html">Conferences</a>
+    <a href="juniorportal.html">Junior Portal</a>
+    <a href="seniorportal.html">Senior Portal</a>
+    <a href="awards.html">Awards</a>
+    <a href="conferences.html">FBLA Conferences</a>
+    <a href="events.html">Chapter Events</a>
     <a href="socialmedia.html">Social Media</a>
-    <a href="other.html">Other Contents</a>
-    <a href="https://10.106.15.15">Database Login</a>
+    <a href="about.html">About</a>
+
   </div>
 
   <div id="main">
@@ -97,38 +99,53 @@
     <button class="openbtn" onclick="openNav()">&#9776;</button>
 
     <!-- STUFF -->
-    <div>
-      <br>
+    <div id="topContainer">
       <center>
-        <h1>Senior Calendar</h1>
-      </center>
-      <iframe
-        src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FPhoenix&amp;src=d2VzdC1tZWMub3JnX2NsYXNzcm9vbWVkODMwOTVkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23b80672&amp;showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0"
-        style="border: 0" width="100%" height="450px"></iframe>
+      <h2>Login Links</h2>
+      <button type="button" id="teambutton" onclick="window.location.href = 'https://web.fbla-pbl.org/portal/';">
+        <p>myFBLA</p>
+      </button><br><br>
+      <button type="button" id="teambutton" onclick="window.location.href = 'https://classroom.google.com/';">
+        <p>Google Classroom</p>
+      </button><br>
+      <h3>Chapter ID: 2411014</h3>
+      <h3>Membership ID: Your FBLA National ID</h3>
+    </center>
+  
+      <!-- <h1>Preview of BAA's</h1>
+      <button type="button" class="standardClickable"
+        onclick="window.location.href = 'baasfuture.html';">Future</button>
+      <button type="button" class="standardClickable"
+        onclick="window.location.href = 'baasbusiness.html';">Business</button>
+      <button type="button" class="standardClickable"
+        onclick="window.location.href = 'baasleader.html';">Leader</button>
+      <button type="button" class="standardClickable"
+        onclick="window.location.href = 'baasamerica.html';">America</button> -->
     </div>
-
-    <!-- STUFFF HERE -->
-  </div>
-
-  <!-- <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
-            <div style="border-bottom:1px #e8e8e8 solid;background-color:#f3f3f3;padding:8px;font-size:13px;font-weight:700;color:#45484d;">
-                Admin Menu Content3</div>
-            <div style="padding:8px;font-size:13px;">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                culpa qui officia deserunt mollit anim id est laborum.		</div>
-        </div> -->
-
-
-
-
-
-  </div>
-  <!-- STUFF ENDS -->
+  
+    <div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
+      <div class="borderofsection1" id="borderofsection">
+        Instructions</div>
+      <div style="padding:8px;font-size:13px;height:100%;">
+        <ul>
+          <h1>Instructions</h1>
+          <ul>
+            <li>Log into the Student Portal (myFBLA)</li><br>
+            <li>Select and work on your activities.</li><br>
+            <li>Upload your activities in the program.</li><br>
+            <li>Log into Google Classroom & Go into the FBLA Class</li><br>
+            <li>Open the BAA tracker & track date and Activity</li>
+            <p style="color:red;">
+              *DO NOT MARK THE ASSIGNMENT AS DONE WHEN TRACKING<BR><BR>
+              *WHEN YOU ARE DONE WITH ALL THE ACTIVITIES, MAKE SURE TO MARK ASSIGNMENT AS DONE
+            </p>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!-- STUFF ENDS -->
+    <!-- STUFF ENDS -->
   </div>
 
   <script>
