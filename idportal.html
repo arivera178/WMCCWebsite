@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="styles/index_styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="nationalids/checkpasswords.js"></script>
   <title>West-MEC CC FBLA - About</title>
   <style>
     body {
@@ -101,53 +102,16 @@
     <!-- STUFF -->
     <div id="topContainer">
       <center>
-      <h2>Login Links</h2>
-      <button type="button" id="teambutton" onclick="window.location.href = 'https://web.fbla-pbl.org/portal/';">
-        <p>myFBLA</p>
-      </button><br><br>
-      <button type="button" id="teambutton" onclick="window.location.href = 'https://classroom.google.com/';">
-        <p>Google Classroom</p>
-      </button><br><br>
-      <!-- <button type="button" id="teambutton" onclick="window.location.href = 'idportal.html';">
-        <p>Get my Natinoal ID!</p>
-      </button><br>
-      <h3>Chapter ID: 2411014</h3>
-      <h3>Membership ID: Your FBLA National ID</h3> -->
-    </center>
-  
-      <!-- <h1>Preview of BAA's</h1>
-      <button type="button" class="standardClickable"
-        onclick="window.location.href = 'baasfuture.html';">Future</button>
-      <button type="button" class="standardClickable"
-        onclick="window.location.href = 'baasbusiness.html';">Business</button>
-      <button type="button" class="standardClickable"
-        onclick="window.location.href = 'baasleader.html';">Leader</button>
-      <button type="button" class="standardClickable"
-        onclick="window.location.href = 'baasamerica.html';">America</button> -->
-    </div>
-  
-    <div style="border:1px #e8e8e8 solid;width:100%;float:left;margin:10px 0px 10px 0px">
-      <div class="borderofsection1" id="borderofsection">
-        Instructions</div>
-      <div style="padding:8px;font-size:13px;height:100%;">
-        <ul>
-          <h1>Instructions</h1>
-          <ul>
-            <li>Log into the Student Portal (myFBLA)</li><br>
-            <li>Select and work on your activities.</li><br>
-            <li>Upload your activities in the program.</li><br>
-            <li>Log into Google Classroom & Go into the FBLA Class</li><br>
-            <li>Open the BAA tracker & track date and Activity</li>
-            <p style="color:red;">
-              *DO NOT MARK THE ASSIGNMENT AS DONE WHEN TRACKING<BR><BR>
-              *WHEN YOU ARE DONE WITH ALL THE ACTIVITIES, MAKE SURE TO MARK ASSIGNMENT AS DONE
-            </p>
-          </ul>
-        </ul>
-      </div>
-    </div>
+      <h2>Enter General Password</h2>
+      <form onsubmit="generalcheck()">
+        <input type="password" id="generalpassword" name="generalpassword"><br><br>
+        <input type="button" value="Login to Database" id="teambutton" onclick="generalcheck()">
+      </form> 
+      <p>Get the password from an officer or from an Adviser!</p>
+      <p id="invalidpassword"></p>
+ 
     <!-- </div> -->
-    <!-- STUFF ENDS -->
+    <!-- STUFF ENDS --> 
     <!-- STUFF ENDS -->
   </div>
 
